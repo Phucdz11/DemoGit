@@ -44,6 +44,4 @@ app.use('/api', excelAdminRoutes);
 app.use('/api', AccountListAdminRoutes);
 
 // Khởi động server
-app.listen(8081, () => { 
-    console.log('Listening on port 8081...');
-});
+app.listen(process.env.PORT || 8081)
